@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/lynnschirmer/Documents/H33-Mon-7pm/Lesson 12/my_desktop_2/flask_venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
